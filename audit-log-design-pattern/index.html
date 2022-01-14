@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="content-language" content="en-us">
+<meta name="description" content="Audit Log Design Pattern, A common example is logging a SQL command after the execution. In addition you might want to look at Audit Log as described by Martin Fowler here and perhaps more generally Temporal Patterns.">
+
+<meta name="robots" content="index,follow">
+<meta name="googlebot" content="index,follow">
+   	
+   	
+<title>74  Audit log design pattern for New Ideas | Best Creative Design Ideas</title>
+<meta name="url" content="https://creativeinspirations.github.io/audit-log-design-pattern/" />
+<meta property="og:url" content="https://creativeinspirations.github.io/audit-log-design-pattern/">
+<meta property="article:author" content="Philipe"> 
+<meta name="author" content="Philipe">
+<meta name="geo.region" content="US">
+<meta name="geo.region" content="GB">
+<meta name="geo.region" content="CA">
+<meta name="geo.region" content="AU">
+<meta name="geo.region" content="IT">
+<meta name="geo.region" content="NL">
+<meta name="geo.region" content="DE">
+<link rel="canonical" href="https://creativeinspirations.github.io/audit-log-design-pattern/">
+<link rel="preconnect" href="https://stackpath.bootstrapcdn.com">
+<link rel="dns-prefetch" href="https://stackpath.bootstrapcdn.com">
+<link rel="preconnect" href="https://code.jquery.com">
+<link rel="dns-prefetch" href="https://code.jquery.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="dns-prefetch" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://creativeinspirations.github.io/assets/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Lora:400,400i,700">
+<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet">
+<link rel="stylesheet" href="https://creativeinspirations.github.io/assets/css/main.css">
+<link rel="stylesheet" href="https://creativeinspirations.github.io/assets/css/theme.css">
+<link rel="icon" type="image/png" href="/logo.png">
+<link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="/favicon.ico">
+<link rel="shortcut icon" href="/favicon.ico">
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "articleSection": "post",
+    "name": "74  Audit log design pattern for New Ideas",
+    "headline": "74  Audit log design pattern for New Ideas",
+    "alternativeHeadline": "",
+    "description": "Run an audit log search. Any IOC Dependency Injection framework to inject the abstract factory to. audit log design pattern.",
+    "inLanguage": "en-us",
+    "isFamilyFriendly": "true",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https:\/\/creativeinspirations.github.io\/audit-log-design-pattern\/"
+    },
+    "author" : {
+        "@type": "Person",
+        "name": "Philipe"
+    },
+    "creator" : {
+        "@type": "Person",
+        "name": "Philipe"
+    },
+    "accountablePerson" : {
+        "@type": "Person",
+        "name": "Philipe"
+    },
+    "copyrightHolder" : "Best Creative Design Ideas",
+    "copyrightYear" : "2021",
+    "dateCreated": "2021-04-09T00:32:39.00Z",
+    "datePublished": "2021-04-09T00:32:39.00Z",
+    "dateModified": "2021-04-09T00:32:39.00Z",
+    "publisher":{
+        "@type":"Organization",
+        "name": "Best Creative Design Ideas",
+        "url": "https://creativeinspirations.github.io/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https:\/\/creativeinspirations.github.io\/logo.png",
+            "width":"32",
+            "height":"32"
+        }
+    },
+    "image": "https://creativeinspirations.github.io/logo.png",
+    "url" : "https:\/\/creativeinspirations.github.io\/audit-log-design-pattern\/",
+    "wordCount" : "1597",
+    "genre" : [ "" ],
+    "keywords" : [ "Audit" , "log" , "design" , "pattern" ]
+}
+</script>
+
+</head>
+  <body>    
+    <nav id="MagicMenu" class="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="https://creativeinspirations.github.io/"><span style="text-transform: capitalize;font-weight: bold;">Best Creative Design Ideas</strong></a><button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="navbar-collapse collapse" id="navbarColor02" style="">
+            <ul class="navbar-nav mr-auto d-flex align-items-center">
+               
+               <li class="nav-item"><a class="nav-link" href="https://creativeinspirations.github.io/contact/">Contact</a></li>
+               <li class="nav-item"><a class="nav-link" href="https://creativeinspirations.github.io/dmca/">Dmca</a></li>
+               <li class="nav-item"><a class="nav-link" href="https://creativeinspirations.github.io/privacy-policy/">Privacy Policy</a></li>
+               <li class="nav-item"><a class="nav-link" href="https://creativeinspirations.github.io/about/">About</a></li><li class="nav-item"><a class="nav-link" style="text-transform: capitalize;" href="https://creativeinspirations.github.io/categories/creative-design/" title="Creative Design">Creative Design</a></li></ul>
+        </div>
+    </div>
+    </nav>
+    <main role="main" class="site-content">
+<div class="container">
+<div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative">
+        <div class="h-100 tofront">
+            <div class="row justify-content-between ">
+                <div class=" col-md-6 pr-0 pr-md-4 pt-4 pb-4 align-self-center">
+                    <p class="text-uppercase font-weight-bold"><span class="catlist"><a class="sscroll text-danger" href="https://creativeinspirations.github.io/categories/creative-design"/>Creative Design</a> . </span></p>
+                    <h1 class="display-4 mb-4 article-headline">74  Audit log design pattern for New Ideas</h1>
+                    <div class="d-flex align-items-center">
+                        <small class="ml-3">Written by Philipe <span class="text-muted d-block mt-1">Apr 09, 2021 · <span class="reading-time">8 min read</span></span></small>
+                    </div>
+                </div>
+                <div class="col-md-6 pr-0 align-self-center">
+                    <img class="rounded" src="https://1.cms.s81c.com/sites/default/files/2021-01-06/ICLH_Diagram_Batch_01_08-LogicalDataModel-WHITEBG.png" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';" alt="74  Audit log design pattern for New Ideas"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-lg pt-4 pb-4">
+    <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-8">
+            <article class="article-post">
+            <p>Run an audit log search. Any IOC Dependency Injection framework to inject the abstract factory to. audit log design pattern.</p>
+<p><strong>Audit Log Design Pattern</strong>, A common example is logging a SQL command after the execution. In addition you might want to look at Audit Log as described by Martin Fowler here and perhaps more generally Temporal Patterns. Provides a record of user actions.</p>
+<p><img loading="lazy" width="100%" src="https://creativeinspirations.github.io/img/placeholder.svg" data-src="https://i.pinimg.com/originals/ba/67/59/ba67598b424d9933acaa4f3763cc6ceb.png" alt="A Table With Row Grouping General Motors Corporation Citigroup Enterprise" title="A Table With Row Grouping General Motors Corporation Citigroup Enterprise" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';" class="center" />
+A Table With Row Grouping General Motors Corporation Citigroup Enterprise From pinterest.com</p>
+<p>Figure 1 helps illustrate the point. It is a Visual Studio 2017 solution with NET Core 22 projects. Inspirational designs illustrations and graphic elements from the worlds best designers.</p>
+<h3 id="two-tables-are-required">Two tables are required.</h3><p>These event objects are then processed to cause changes to the system and stored to provide an Audit Log. The best design I can think of is two dates an external date of the event managed by the application using the DB and then an internal one of the record. Most of the patterns include code samples or snippets that show how to implement the pattern on Azure. This pattern has the following benefits. Each pattern describes the problem that the pattern addresses considerations for applying the pattern and an example based on Microsoft Azure. Db contains database and entity framework related codes.</p>
+<p><strong>Another Article :</strong>
+<span class="navi text-left"><a class="badge badge-danger" href="/arabic-villa-design-plans/">Arabic villa design plans</a></span>
+<span class="navi text-left"><a class="badge badge-info" href="/arabic-graphic-design-software/">Arabic graphic design software</a></span>
+<span class="navi text-left"><a class="badge badge-danger" href="/aquent-design/">Aquent design</a></span>
+<span class="navi text-left"><a class="badge badge-dark" href="/arapapa-designs/">Arapapa designs</a></span>
+<span class="navi text-left"><a class="badge badge-secondary" href="/ar-design-build/">Ar design build</a></span></p>
+<div class="d-block p-4">
+	<center>
+	<script type="text/javascript">
+	atOptions = {
+		'key' : '6eb1338014a00727fa9fcbd08aec3782',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.variousformatscontent.com/6eb1338014a00727fa9fcbd08aec3782/invoke.js"></scr' + 'ipt>');
+	</script>
+	</center>
+</div>
+<p><img loading="lazy" width="100%" src="https://creativeinspirations.github.io/img/placeholder.svg" data-src="https://cdn.dribbble.com/users/1040771/screenshots/15140952/media/0a515547de8ad40824a6456bc903836c.jpg?compress=1&amp;amp;resize=400x300" alt="Audit Log Designs Themes Templates And Downloadable Graphic Elements On Dribbble" title="Audit Log Designs Themes Templates And Downloadable Graphic Elements On Dribbble" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';" class="center" /></p>
+<center>Source: dribbble.com</center>
+<p>These design patterns are useful for building reliable scalable secure applications in the cloud. The best design I can think of is two dates an external date of the event managed by the application using the DB and then an internal one of the record. How to design an audit log subsystem that can cater for different use cases of an enterprise system. The contents are represented as a protocol buffer and vary depending on the specific content being logged. This approach could be considered the traditional auditing technique where an auditing table is created for each base table that needs to be audited. Audit Log Designs Themes Templates And Downloadable Graphic Elements On Dribbble.</p>
+<p><img loading="lazy" width="100%" src="https://creativeinspirations.github.io/img/placeholder.svg" data-src="https://www.codeproject.com/KB/database/ImplAudingTrailUsingEFP-2/DataBaseDbAudit.JPG" alt="Implementing Audit Trail Using Entity Framework Part 2 Codeproject" title="Implementing Audit Trail Using Entity Framework Part 2 Codeproject" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';" class="center" /></p>
+<center>Source: codeproject.com</center>
+<p>The tighter the integration the less useful is Audit Log. Implement DB triggers to capture any change in data states and log in audit tables. Remember that you can use Audit Log in some parts of the model and other patterns elsewhere. Well create a small example database for a blogging application. Audit Log Builder Problem. Implementing Audit Trail Using Entity Framework Part 2 Codeproject.</p>
+<p><img loading="lazy" width="100%" src="https://creativeinspirations.github.io/img/placeholder.svg" data-src="https://d2908q01vomqb2.cloudfront.net/77de68daecd823babbb58edb1c8e14d7106e83bb/2019/11/20/AWS-Bryte-Data-Lakes-11.png" alt="How To Create A Continually Refreshed Amazon S3 Data Lake In Just One Day Aws Partner Network Apn Blog" title="How To Create A Continually Refreshed Amazon S3 Data Lake In Just One Day Aws Partner Network Apn Blog" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';" class="center" /></p>
+<center>Source: aws.amazon.com</center>
+<p>The design from the base table to the audit table are very similar but the audit table has some additional columns to support managing the historical data ie. The tighter the integration the less useful is Audit Log. A common example is logging a SQL command after the execution. Each audit record is either an Edit or a Delete and contains the record that was changed and the old value of the object if applicable. This pattern has the following benefits. How To Create A Continually Refreshed Amazon S3 Data Lake In Just One Day Aws Partner Network Apn Blog.</p>
+<p><img loading="lazy" width="100%" src="https://creativeinspirations.github.io/img/placeholder.svg" data-src="https://d2908q01vomqb2.cloudfront.net/77de68daecd823babbb58edb1c8e14d7106e83bb/2019/11/20/AWS-Bryte-Data-Lakes-10.png" alt="How To Create A Continually Refreshed Amazon S3 Data Lake In Just One Day Aws Partner Network Apn Blog" title="How To Create A Continually Refreshed Amazon S3 Data Lake In Just One Day Aws Partner Network Apn Blog" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';" class="center" /></p>
+<center>Source: aws.amazon.com</center>
+<p>The Admin Activity and Data Access audit logs are both exported in this format. A common example is logging a SQL command after the execution. Run an audit log search. Event Sourcing is a reliable way to implement auditing. Log audit data in business services which means collecting the required data in each business service operation and log it using some abstract Audit service to some data store. How To Create A Continually Refreshed Amazon S3 Data Lake In Just One Day Aws Partner Network Apn Blog.</p>
+<p><img loading="lazy" width="100%" src="https://creativeinspirations.github.io/img/placeholder.svg" data-src="https://csharpcorner-mindcrackerinc.netdna-ssl.com/article/audit-trail-and-data-versioning-with-c-sharp-and-mvc/Images/AuditIndexDeleted2.png" alt="Audit Trail And Data Versioning With C And Mvc" title="Audit Trail And Data Versioning With C And Mvc" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';" class="center" /></p>
+<center>Source: c-sharpcorner.com</center>
+<p>AuditID to serve as the identity ModifiedBy to serve. Run an audit log search. This pattern has the following drawbacks. Well create a small example database for a blogging application. Log audit data in business services which means collecting the required data in each business service operation and log it using some abstract Audit service to some data store. Audit Trail And Data Versioning With C And Mvc.</p>
+<p><img loading="lazy" width="100%" src="https://creativeinspirations.github.io/img/placeholder.svg" data-src="https://i.stack.imgur.com/XdBXi.png" alt="Action Audit On A Jsf With Just A Primefaces Datatable Stack Overflow" title="Action Audit On A Jsf With Just A Primefaces Datatable Stack Overflow" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';" class="center" /></p>
+<center>Source: stackoverflow.com</center>
+<p>Provides a record of user actions. Use a private browsing session not a regular session to access the Microsoft 365 compliance center because this will prevent the credential that you are currently logged on with from being used. Using generic logging framework like Log4J to log the auditing information to desired format and data store. Two tables are required. Log audit data in business services which means collecting the required data in each business service operation and log it using some abstract Audit service to some data store. Action Audit On A Jsf With Just A Primefaces Datatable Stack Overflow.</p>
+<p><img loading="lazy" width="100%" src="https://creativeinspirations.github.io/img/placeholder.svg" data-src="https://cdn.dribbble.com/users/9579/screenshots/8227977/media/50e09168055d1b6f2727c385ad3ee66e.png?compress=1&amp;amp;resize=400x300" alt="Audit Log Designs Themes Templates And Downloadable Graphic Elements On Dribbble" title="Audit Log Designs Themes Templates And Downloadable Graphic Elements On Dribbble" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';" class="center" /></p>
+<center>Source: dribbble.com</center>
+<p>Audit log entries should be written before an action - not after. Crucial aspect of the audithistory table a time stamp date and time of when the event happened. Theres an audit log thing that collects a bunch of audit record things. These logs have different JSON and table structures in BigQuery based on the exported entry type. Remember that you can use Audit Log in some parts of the model and other patterns elsewhere. Audit Log Designs Themes Templates And Downloadable Graphic Elements On Dribbble.</p>
+<p><img loading="lazy" width="100%" src="https://creativeinspirations.github.io/img/placeholder.svg" data-src="https://logz.io/wp-content/uploads/2017/10/sort.png" alt="Introducing The Audit Trail Logz Io" title="Introducing The Audit Trail Logz Io" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';" class="center" /></p>
+<center>Source: logz.io</center>
+<p>Db contains database and entity framework related codes. Event Sourcing is a reliable way to implement auditing. Figure 1 helps illustrate the point. Remember that you can use Audit Log in some parts of the model and other patterns elsewhere. So you might handle actual time history of a property with Temporal Property and use Audit Log to handle the. Introducing The Audit Trail Logz Io.</p>
+<p><img loading="lazy" width="100%" src="https://creativeinspirations.github.io/img/placeholder.svg" data-src="https://cdn.dribbble.com/users/2588620/screenshots/11375351/media/3ed333e33b6d633d96ad398a450f909b.png?compress=1&amp;amp;resize=400x300" alt="Audit Log Designs Themes Templates And Downloadable Graphic Elements On Dribbble" title="Audit Log Designs Themes Templates And Downloadable Graphic Elements On Dribbble" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';" class="center" /></p>
+<center>Source: dribbble.com</center>
+<p>Custom application level or domain entity id who acts as the performer of the action. Remember that you can use Audit Log in some parts of the model and other patterns elsewhere. Provides a record of user actions. The contents are represented as a protocol buffer and vary depending on the specific content being logged. How to design an audit log subsystem that can cater for different use cases of an enterprise system. Audit Log Designs Themes Templates And Downloadable Graphic Elements On Dribbble.</p>
+<p><img loading="lazy" width="100%" src="https://creativeinspirations.github.io/img/placeholder.svg" data-src="https://www.codeproject.com/KB/aspnet/AuditTracking/1a.jpg" alt="Implementing Audit History Tracking Using The Prototype Pattern Codeproject" title="Implementing Audit History Tracking Using The Prototype Pattern Codeproject" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';" class="center" /></p>
+<center>Source: codeproject.com</center>
+<p>It should be dynamic enough to includes various types of audit log under an use case under discussion. Each pattern describes the problem that the pattern addresses considerations for applying the pattern and an example based on Microsoft Azure. This approach could be considered the traditional auditing technique where an auditing table is created for each base table that needs to be audited. Two tables are required. It is a Visual Studio 2017 solution with NET Core 22 projects. Implementing Audit History Tracking Using The Prototype Pattern Codeproject.</p>
+<p><img loading="lazy" width="100%" src="https://creativeinspirations.github.io/img/placeholder.svg" data-src="https://i.pinimg.com/originals/ba/67/59/ba67598b424d9933acaa4f3763cc6ceb.png" alt="A Table With Row Grouping General Motors Corporation Citigroup Enterprise" title="A Table With Row Grouping General Motors Corporation Citigroup Enterprise" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';" class="center" /></p>
+<center>Source: pinterest.com</center>
+<p>This approach could be considered the traditional auditing technique where an auditing table is created for each base table that needs to be audited. Using generic logging framework like Log4J to log the auditing information to desired format and data store. Most of the patterns include code samples or snippets that show how to implement the pattern on Azure. Fowler provides an introduction here. Here we have a system with inputs from a user interface messaging system and some direct manipulation of database tables. A Table With Row Grouping General Motors Corporation Citigroup Enterprise.</p>
+<p><img loading="lazy" width="100%" src="https://creativeinspirations.github.io/img/placeholder.svg" data-src="https://i.pinimg.com/originals/61/a7/1d/61a71d821654c9292f2d75207fe1e92c.jpg" alt="Microservice Architecture Pattern Architektur Muster Sprache" title="Microservice Architecture Pattern Architektur Muster Sprache" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';" class="center" /></p>
+<center>Source: pinterest.com</center>
+<p>Run an audit log search. This approach could be considered the traditional auditing technique where an auditing table is created for each base table that needs to be audited. For instance for the actual audit log topic with the enriched change events a time based retention policy might be suitable keeping each log event for as long as needed as per your requirements. So you might handle actual time history of a property with Temporal Property and use Audit Log to handle the. Each pattern describes the problem that the pattern addresses considerations for applying the pattern and an example based on Microsoft Azure. Microservice Architecture Pattern Architektur Muster Sprache.</p>
+<p><img loading="lazy" width="100%" src="https://creativeinspirations.github.io/img/placeholder.svg" data-src="https://i.pinimg.com/736x/9b/bf/44/9bbf44ad10862bd5087548e3d036108d.jpg" alt="Data Tables Design Design Basics Data Data Table" title="Data Tables Design Design Basics Data Data Table" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';" class="center" /></p>
+<center>Source: pinterest.com</center>
+<p>This approach could be considered the traditional auditing technique where an auditing table is created for each base table that needs to be audited. Two tables are required. Inspirational designs illustrations and graphic elements from the worlds best designers. Log audit data in business services which means collecting the required data in each business service operation and log it using some abstract Audit service to some data store. In case of an exception the log entry might not be written so the audit log will not provide relevant contextual information for the exception. Data Tables Design Design Basics Data Data Table.</p>
+<p><img loading="lazy" width="100%" src="https://creativeinspirations.github.io/img/placeholder.svg" data-src="https://blog.monyog.com/wp-content/uploads/2018/03/audit-2-1024x549.png" alt="Database Audit Log Monitoring For Security And Compliance Monyog Blog" title="Database Audit Log Monitoring For Security And Compliance Monyog Blog" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';" class="center" /></p>
+<center>Source: blog.monyog.com</center>
+<p>Stores a unique post ID the title content and a deleted flag. How to design an audit log subsystem that can cater for different use cases of an enterprise system. AuditID to serve as the identity ModifiedBy to serve. Provides a record of user actions. The contents are represented as a protocol buffer and vary depending on the specific content being logged. Database Audit Log Monitoring For Security And Compliance Monyog Blog.</p>
+<p><img loading="lazy" width="100%" src="https://creativeinspirations.github.io/img/placeholder.svg" data-src="https://1.cms.s81c.com/sites/default/files/2021-01-06/ICLH_Diagram_Batch_01_08-LogicalDataModel-WHITEBG.png" alt="What Is Data Modeling Ibm" title="What Is Data Modeling Ibm" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';" class="center" /></p>
+<center>Source: ibm.com</center>
+<p>These event objects are then processed to cause changes to the system and stored to provide an Audit Log. So you might handle actual time history of a property with Temporal Property and use Audit Log to handle the. Crucial aspect of the audithistory table a time stamp date and time of when the event happened. How to design an audit log subsystem that can cater for different use cases of an enterprise system. If you wanted to do more than just business activity monitoring business reporting of these events you might want to look at Event Sourcing. What Is Data Modeling Ibm.</p>
+
+   
+
+            </article>
+            <div class="row"><div class="posts-image" style="width:50%;"><a style="margin:5px;" href="/asphalt-pavement-design-guide/">&laquo;&laquo;&nbsp;54 New Asphalt pavement design guide for Creative Ideas</a></div>
+    <div class="posts-image" style="width:50%"><a style="margin:5px;" href="/asce-7-minimum-design-loads-for-buildings/">41 New Asce 7 minimum design loads for buildings for Creative Ideas&nbsp;&raquo;&raquo;</a></div></div>
+            
+            <div class="mb-4">
+                <span class="taglist"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+<div class="container pt-4 pb-4">
+    
+    <h5 class="font-weight-bold spanborder"><span>Related Article</span></h5>
+    <div class="row">
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/alvin-cake-design/"><img height="80" src="/img/placeholder.svg" data-src="https://i.pinimg.com/originals/c8/99/0f/c8990f3e2e171e1babd6d4d09d68b1b3.jpg" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/alvin-cake-design/">73 Nice Alvin cake design for Trend 2022</a>
+                        </h2>
+                        <small class="text-muted">Nov 25 . 7 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/agencia-design-curitiba/"><img height="80" src="/img/placeholder.svg" data-src="https://img.tecnisa.com.br/images/imoveis/237/Planta/33,46_m_-_sala_comercial_inspira_business_tecnisa_planta.jpg" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/agencia-design-curitiba/">38 Simple Agencia design curitiba </a>
+                        </h2>
+                        <small class="text-muted">Dec 07 . 4 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/animal-crossing-happy-home-designer-eb-games/"><img height="80" src="/img/placeholder.svg" data-src="https://i.pinimg.com/originals/52/f4/eb/52f4ebf7aac243afb2576cdcfdd11a11.jpg" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/animal-crossing-happy-home-designer-eb-games/">55 New Animal crossing happy home designer eb games </a>
+                        </h2>
+                        <small class="text-muted">Nov 11 . 8 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/alternance-ux-design-paris/"><img height="80" src="/img/placeholder.svg" data-src="https://i.pinimg.com/originals/56/7a/e1/567ae1a0f79883fad0215f051efa50ab.png" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/alternance-ux-design-paris/">36 Best Alternance ux design paris with Simple Design</a>
+                        </h2>
+                        <small class="text-muted">Sep 11 . 6 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/baby-earrings-gold-indian-designs/"><img height="80" src="/img/placeholder.svg" data-src="https://i.pinimg.com/originals/cf/38/48/cf3848a4bf61f3259755efef81f96344.jpg" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/baby-earrings-gold-indian-designs/">31 Nice Baby earrings gold indian designs </a>
+                        </h2>
+                        <small class="text-muted">Feb 27 . 7 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/ai-design-lab/"><img height="80" src="/img/placeholder.svg" data-src="https://i.pinimg.com/originals/af/61/e9/af61e9664739ee255bf4a24a3a4814e4.png" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/ai-design-lab/">41 Nice Ai design lab </a>
+                        </h2>
+                        <small class="text-muted">Mar 19 . 9 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/as9100-design-and-development-procedure/"><img height="80" src="/img/placeholder.svg" data-src="https://www.bizmanualz.com/wp-content/uploads/2015/01/AS9100-Design-and-Development-Procedure.jpg" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/as9100-design-and-development-procedure/">77 New As9100 design and development procedure </a>
+                        </h2>
+                        <small class="text-muted">Feb 02 . 8 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/advanced-web-design-course-description/"><img height="80" src="/img/placeholder.svg" data-src="https://i.pinimg.com/originals/96/08/b7/9608b792b2e2c6c8c642f6d943f99a6d.jpg" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/advanced-web-design-course-description/">42 Simple Advanced web design course description </a>
+                        </h2>
+                        <small class="text-muted">Sep 03 . 7 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/affordable-web-design-development/"><img height="80" src="/img/placeholder.svg" data-src="https://i.pinimg.com/originals/e3/be/85/e3be85647f51f4173e3951be4e622dbd.jpg" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/affordable-web-design-development/">60 New Affordable web design development </a>
+                        </h2>
+                        <small class="text-muted">Dec 09 . 7 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/academy-of-hair-design-las-vegas-tuition/"><img height="80" src="/img/placeholder.svg" data-src="https://assets3.thrillist.com/v1/image/2722116/792x452/flatten;scale;webp=auto;jpeg_quality=70" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/academy-of-hair-design-las-vegas-tuition/">53 New Academy of hair design las vegas tuition for Creative Ideas</a>
+                        </h2>
+                        <small class="text-muted">Aug 11 . 7 min read</small>
+                    </div>
+                </div>
+        </div>
+</div>
+</div>
+</div>
+    </main>    <script async="async" src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script async="async" src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script async="async" src="https://creativeinspirations.github.io/assets/js/theme.js"></script>
+    <script>function init(){var imgDefer=document.getElementsByTagName('img');for (var i=0; i<imgDefer.length; i++){if(imgDefer[i].getAttribute('data-src')){imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));}}}window.onload=init;</script>
+    
+    <footer class="bg-white border-top p-3 text-muted small">
+        <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div><span style="text-transform: capitalize;"><a href="https://creativeinspirations.github.io/">Best Creative Design Ideas</a> Copyright &copy; 2021.</span></div>
+            
+        </div>
+        </div>
+    </footer>
+
+
+<script type="text/javascript">
+var sc_project=11911213; 
+var sc_invisible=1; 
+var sc_security="de02d441"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/11911213/0/de02d441/1/"
+alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+
+
+  </body>
+</html>

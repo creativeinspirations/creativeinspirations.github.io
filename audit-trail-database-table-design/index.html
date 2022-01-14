@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="content-language" content="en-us">
+<meta name="description" content="Audit Trail Database Table Design, Audit tables are used to track transactions for a particular table or tables. The design from the base table to the audit table are very similar but the audit table has some additional columns to support managing the historical data ie.">
+
+<meta name="robots" content="index,follow">
+<meta name="googlebot" content="index,follow">
+   	
+   	
+<title>41 Simple Audit trail database table design  | Best Creative Design Ideas</title>
+<meta name="url" content="https://creativeinspirations.github.io/audit-trail-database-table-design/" />
+<meta property="og:url" content="https://creativeinspirations.github.io/audit-trail-database-table-design/">
+<meta property="article:author" content="Jimmy"> 
+<meta name="author" content="Jimmy">
+<meta name="geo.region" content="US">
+<meta name="geo.region" content="GB">
+<meta name="geo.region" content="CA">
+<meta name="geo.region" content="AU">
+<meta name="geo.region" content="IT">
+<meta name="geo.region" content="NL">
+<meta name="geo.region" content="DE">
+<link rel="canonical" href="https://creativeinspirations.github.io/audit-trail-database-table-design/">
+<link rel="preconnect" href="https://stackpath.bootstrapcdn.com">
+<link rel="dns-prefetch" href="https://stackpath.bootstrapcdn.com">
+<link rel="preconnect" href="https://code.jquery.com">
+<link rel="dns-prefetch" href="https://code.jquery.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="dns-prefetch" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://creativeinspirations.github.io/assets/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Lora:400,400i,700">
+<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet">
+<link rel="stylesheet" href="https://creativeinspirations.github.io/assets/css/main.css">
+<link rel="stylesheet" href="https://creativeinspirations.github.io/assets/css/theme.css">
+<link rel="icon" type="image/png" href="/logo.png">
+<link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="/favicon.ico">
+<link rel="shortcut icon" href="/favicon.ico">
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "articleSection": "post",
+    "name": "41 Simple Audit trail database table design ",
+    "headline": "41 Simple Audit trail database table design ",
+    "alternativeHeadline": "",
+    "description": "Try it out on a small DB as see what you think SET ANSI_NULLS ON. This approach could be considered the traditional auditing technique where an auditing table is created for each base table that needs to be audited. audit trail database table design.",
+    "inLanguage": "en-us",
+    "isFamilyFriendly": "true",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https:\/\/creativeinspirations.github.io\/audit-trail-database-table-design\/"
+    },
+    "author" : {
+        "@type": "Person",
+        "name": "Jimmy"
+    },
+    "creator" : {
+        "@type": "Person",
+        "name": "Jimmy"
+    },
+    "accountablePerson" : {
+        "@type": "Person",
+        "name": "Jimmy"
+    },
+    "copyrightHolder" : "Best Creative Design Ideas",
+    "copyrightYear" : "2021",
+    "dateCreated": "2021-11-25T08:49:12.00Z",
+    "datePublished": "2021-11-25T08:49:12.00Z",
+    "dateModified": "2021-11-25T08:49:12.00Z",
+    "publisher":{
+        "@type":"Organization",
+        "name": "Best Creative Design Ideas",
+        "url": "https://creativeinspirations.github.io/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https:\/\/creativeinspirations.github.io\/logo.png",
+            "width":"32",
+            "height":"32"
+        }
+    },
+    "image": "https://creativeinspirations.github.io/logo.png",
+    "url" : "https:\/\/creativeinspirations.github.io\/audit-trail-database-table-design\/",
+    "wordCount" : "1730",
+    "genre" : [ "creative ideas" ],
+    "keywords" : [ "Audit" , "trail" , "database" , "table" , "design" ]
+}
+</script>
+
+</head>
+  <body>    
+    <nav id="MagicMenu" class="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="https://creativeinspirations.github.io/"><span style="text-transform: capitalize;font-weight: bold;">Best Creative Design Ideas</strong></a><button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="navbar-collapse collapse" id="navbarColor02" style="">
+            <ul class="navbar-nav mr-auto d-flex align-items-center">
+               
+               <li class="nav-item"><a class="nav-link" href="https://creativeinspirations.github.io/contact/">Contact</a></li>
+               <li class="nav-item"><a class="nav-link" href="https://creativeinspirations.github.io/dmca/">Dmca</a></li>
+               <li class="nav-item"><a class="nav-link" href="https://creativeinspirations.github.io/privacy-policy/">Privacy Policy</a></li>
+               <li class="nav-item"><a class="nav-link" href="https://creativeinspirations.github.io/about/">About</a></li><li class="nav-item"><a class="nav-link" style="text-transform: capitalize;" href="https://creativeinspirations.github.io/categories/creative-design/" title="Creative Design">Creative Design</a></li></ul>
+        </div>
+    </div>
+    </nav>
+    <main role="main" class="site-content">
+<div class="container">
+<div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative">
+        <div class="h-100 tofront">
+            <div class="row justify-content-between ">
+                <div class=" col-md-6 pr-0 pr-md-4 pt-4 pb-4 align-self-center">
+                    <p class="text-uppercase font-weight-bold"><span class="catlist"><a class="sscroll text-danger" href="https://creativeinspirations.github.io/categories/creative-design"/>Creative Design</a> . </span></p>
+                    <h1 class="display-4 mb-4 article-headline">41 Simple Audit trail database table design </h1>
+                    <div class="d-flex align-items-center">
+                        <small class="ml-3">Written by Jimmy <span class="text-muted d-block mt-1">Nov 25, 2021 · <span class="reading-time">9 min read</span></span></small>
+                    </div>
+                </div>
+                <div class="col-md-6 pr-0 align-self-center">
+                    <img class="rounded" src="https://confluence.atlassian.com/adminjiracloud/files/818578846/976169130/1/1566539304230/Audit&#43;log.png" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';" alt="41 Simple Audit trail database table design "/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-lg pt-4 pb-4">
+    <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-8">
+            <article class="article-post">
+            <p>Try it out on a small DB as see what you think SET ANSI_NULLS ON. This approach could be considered the traditional auditing technique where an auditing table is created for each base table that needs to be audited. audit trail database table design.</p>
+<p><strong>Audit Trail Database Table Design</strong>, Audit tables are used to track transactions for a particular table or tables. The design from the base table to the audit table are very similar but the audit table has some additional columns to support managing the historical data ie. This approach could be considered the traditional auditing technique where an auditing table is created for each base table that needs to be audited.</p>
+<p><img loading="lazy" width="100%" src="https://creativeinspirations.github.io/img/placeholder.svg" data-src="https://docs.microsoft.com/en-us/azure/mysql/media/howto-configure-audit-logs-portal/audit-log-enabled.png" alt="Access Audit Logs Azure Portal Azure Database For Mysql Microsoft Docs" title="Access Audit Logs Azure Portal Azure Database For Mysql Microsoft Docs" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';" class="center" />
+Access Audit Logs Azure Portal Azure Database For Mysql Microsoft Docs From docs.microsoft.com</p>
+<p>It is not really an audit and cannot be used for the purposes mentioned above plain and simple. Well create a small example database for a blogging application. Audit trails are the manual or electronic records that chronologically catalog events or procedures to provide support documentation and history that is used to authenticate security and operational actions or mitigate challenges.</p>
+<h3 id="the-event-target-object-is-an-audit-trail-table">The event-target object is an audit trail table.</h3><p>We have the database design requirement for audit trail purpose in MySQL 57. This item is not output for privilege checking. Audit trails are the manual or electronic records that chronologically catalog events or procedures to provide support documentation and history that is used to authenticate security and operational actions or mitigate challenges. Stores a basic set of historical changes with a record ID the blog post ID the change type NEW EDIT or DELETE and the datetime of that change. One single AUDIT table. No row reconstruction from individual value changes is necessary.</p>
+<p><strong>Another Article :</strong>
+<span class="navi text-left"><a class="badge badge-danger" href="/alex-stuart-design-chatsworth-california/">Alex stuart design chatsworth california</a></span>
+<span class="navi text-left"><a class="badge badge-primary" href="/alexis-designer-closet/">Alexis designer closet</a></span>
+<span class="navi text-left"><a class="badge badge-secondary" href="/alexander-dress-designer/">Alexander dress designer</a></span>
+<span class="navi text-left"><a class="badge badge-danger" href="/alfresco-room-designs/">Alfresco room designs</a></span>
+<span class="navi text-left"><a class="badge badge-info" href="/alexa-adams-designer/">Alexa adams designer</a></span></p>
+<div class="d-block p-4">
+	<center>
+	<script type="text/javascript">
+	atOptions = {
+		'key' : '6eb1338014a00727fa9fcbd08aec3782',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.variousformatscontent.com/6eb1338014a00727fa9fcbd08aec3782/invoke.js"></scr' + 'ipt>');
+	</script>
+	</center>
+</div>
+<p><img loading="lazy" width="100%" src="https://creativeinspirations.github.io/img/placeholder.svg" data-src="https://csharpcorner-mindcrackerinc.netdna-ssl.com/article/audit-trail-and-data-versioning-with-c-sharp-and-mvc/Images/AuditUITrail.png" alt="Audit Trail And Data Versioning With C And Mvc" title="Audit Trail And Data Versioning With C And Mvc" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';" class="center" /></p>
+<center>Source: c-sharpcorner.com</center>
+<p>Log audit data in business services which means collecting the required data in each business service operation and log it using some abstract Audit service to some data store. For every record in the main table there will be multiple records in the sub-tables. Audit trails are the manual or electronic records that chronologically catalog events or procedures to provide support documentation and history that is used to authenticate security and operational actions or mitigate challenges. Two tables are required. Audit tables are used to track transactions for a particular table or tables. Audit Trail And Data Versioning With C And Mvc.</p>
+<p><img loading="lazy" width="100%" src="https://creativeinspirations.github.io/img/placeholder.svg" data-src="https://i.pinimg.com/736x/0d/b1/51/0db151364e5ed3cbc25e5b2ddf52d363.jpg" alt="Building Audit Logs With Change Data Capture And Stream Processing Debezium Data Capture Stream Processing Streaming" title="Building Audit Logs With Change Data Capture And Stream Processing Debezium Data Capture Stream Processing Streaming" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';" class="center" /></p>
+<center>Source: pinterest.com</center>
+<p>This will work but often will be not-too-optimal. Then create a newmodule and. Numerous industries use versions of an audit trail to provide a historical record of progression based on a. No row reconstruction from individual value changes is necessary. Using generic logging framework like Log4J to log the auditing information to desired format and data store. Building Audit Logs With Change Data Capture And Stream Processing Debezium Data Capture Stream Processing Streaming.</p>
+<p><img loading="lazy" width="100%" src="https://creativeinspirations.github.io/img/placeholder.svg" data-src="https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/images/aurora-log.png" alt="Using Advanced Auditing With An Amazon Aurora Mysql Db Cluster Amazon Aurora" title="Using Advanced Auditing With An Amazon Aurora Mysql Db Cluster Amazon Aurora" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';" class="center" /></p>
+<center>Source: docs.aws.amazon.com</center>
+<p>Log audit data in business services which means collecting the required data in each business service operation and log it using some abstract Audit service to some data store. 1-to-1 relationship to audits and stores the primary key of any table which has a single primary key. Usually contains fields such as TABLE_ID FIELD_ID and NEW_VALUE OLD_VALUE. As triggers are user-defined objects T-SQL must be written to specify what data to capture and ultimately what to do with it. Well create a small example database for a blogging application. Using Advanced Auditing With An Amazon Aurora Mysql Db Cluster Amazon Aurora.</p>
+<p><img loading="lazy" width="100%" src="https://creativeinspirations.github.io/img/placeholder.svg" data-src="http://files.alfresco.mjh.group/alfresco_images/pharma/2020/03/23/b5c4973d-0335-4de8-81b3-b3f4a0d1b56f/fig2_-L.jpg" alt="The Why What And How Of Cds Audit Trail Review" title="The Why What And How Of Cds Audit Trail Review" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';" class="center" /></p>
+<center>Source: chromatographyonline.com</center>
+<p>One single AUDIT table. Audit trails are the manual or electronic records that chronologically catalog events or procedures to provide support documentation and history that is used to authenticate security and operational actions or mitigate challenges. Audit tables are used by native or 3rd party auditing tools that capture data changes that have occurred on a database usually including the information on who made the change which objects were affected by it when it was made as well as the information on the SQL login application and host used to make the change. The event-target object is a list created using an audit trail table as the base table. A table or tables will need to be created to which the triggers will point and deliver the audited information they have captured. The Why What And How Of Cds Audit Trail Review.</p>
+<p><img loading="lazy" width="100%" src="https://creativeinspirations.github.io/img/placeholder.svg" data-src="https://docs.microsoft.com/en-us/azure/mysql/media/howto-configure-audit-logs-portal/audit-log-exclude-users.png" alt="Access Audit Logs Azure Portal Azure Database For Mysql Microsoft Docs" title="Access Audit Logs Azure Portal Azure Database For Mysql Microsoft Docs" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';" class="center" /></p>
+<center>Source: docs.microsoft.com</center>
+<p>But either way works just fine. Audit tables are used to track transactions for a particular table or tables. Numerous industries use versions of an audit trail to provide a historical record of progression based on a. Audit tables are used by native or 3rd party auditing tools that capture data changes that have occurred on a database usually including the information on who made the change which objects were affected by it when it was made as well as the information on the SQL login application and host used to make the change. Below is a simple example of creating an audit trail on a Microsoft Access form. Access Audit Logs Azure Portal Azure Database For Mysql Microsoft Docs.</p>
+<p><img loading="lazy" width="100%" src="https://creativeinspirations.github.io/img/placeholder.svg" data-src="https://cdn.dribbble.com/users/1040771/screenshots/15140952/media/0a515547de8ad40824a6456bc903836c.jpg?compress=1&amp;amp;resize=400x300" alt="Audit Log Designs Themes Templates And Downloadable Graphic Elements On Dribbble" title="Audit Log Designs Themes Templates And Downloadable Graphic Elements On Dribbble" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';" class="center" /></p>
+<center>Source: dribbble.com</center>
+<p>This will work but often will be not-too-optimal. Before you add a new table to the JD Edwards EnterpriseOne system determine whether an existing table contains the data items required. Stores a unique post ID the title content and a deleted flag. First create your Audit Table call it tblAuditTrail ChangeID Autonumber DateTime DateTime UserID Short text FormName Short text FieldName Short text OldValue Short text NewValue Short text Action Short text RecordID Short text. The event-target object is an audit trail table. Audit Log Designs Themes Templates And Downloadable Graphic Elements On Dribbble.</p>
+<p><img loading="lazy" width="100%" src="https://creativeinspirations.github.io/img/placeholder.svg" data-src="https://cdn.dribbble.com/users/9579/screenshots/8227977/media/50e09168055d1b6f2727c385ad3ee66e.png?compress=1&amp;amp;resize=400x300" alt="Audit Log Designs Themes Templates And Downloadable Graphic Elements On Dribbble" title="Audit Log Designs Themes Templates And Downloadable Graphic Elements On Dribbble" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';" class="center" /></p>
+<center>Source: dribbble.com</center>
+<p>This will work but often will be not-too-optimal. Create a record whenever a change is made to any table and stores the table the date the user who made the change and the task insert update remove. Numerous industries use versions of an audit trail to provide a historical record of progression based on a. Audit trail table option. One single AUDIT table. Audit Log Designs Themes Templates And Downloadable Graphic Elements On Dribbble.</p>
+<p><img loading="lazy" width="100%" src="https://creativeinspirations.github.io/img/placeholder.svg" data-src="https://docs.inductiveautomation.com/download/attachments/26019732/2018-10-22_8-56-55.png?version=1&amp;amp;modificationDate=1540249087000&amp;amp;api=v2" alt="Audit Log And Profiles Ignition User Manual 8 0 Ignition Documentation" title="Audit Log And Profiles Ignition User Manual 8 0 Ignition Documentation" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';" class="center" /></p>
+<center>Source: docs.inductiveautomation.com</center>
+<p>If you ever need to use the audit table you will appreciate this. There is one main table and there are few sub-tables to the main table. One common approach for creating audit trails are application-side libraries. Audit trails are the manual or electronic records that chronologically catalog events or procedures to provide support documentation and history that is used to authenticate security and operational actions or mitigate challenges. For every record in the main table there will be multiple records in the sub-tables. Audit Log And Profiles Ignition User Manual 8 0 Ignition Documentation.</p>
+<p><img loading="lazy" width="100%" src="https://creativeinspirations.github.io/img/placeholder.svg" data-src="https://s33046.pcdn.co/wp-content/uploads/2019/04/sql-server-audit-specification.png" alt="Using The Sql Server Audit Feature To Audit Different Actions" title="Using The Sql Server Audit Feature To Audit Different Actions" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';" class="center" /></p>
+<center>Source: sqlshack.com</center>
+<p>If an appropriate table does not exist you must create a new table. No row reconstruction from individual value changes is necessary. AuditID to serve as the identity ModifiedBy to serve. If an appropriate table does not exist you must create a new table. Create a record whenever a change is made to any table and stores the table the date the user who made the change and the task insert update remove. Using The Sql Server Audit Feature To Audit Different Actions.</p>
+<p><img loading="lazy" width="100%" src="https://creativeinspirations.github.io/img/placeholder.svg" data-src="https://confluence.atlassian.com/conf74/files/1003129412/1003129413/1/1587519505741/AuditLog_820px_Annotated.png" alt="Audit Log Confluence Data Center And Server 7 4 Atlassian Documentation" title="Audit Log Confluence Data Center And Server 7 4 Atlassian Documentation" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';" class="center" /></p>
+<center>Source: confluence.atlassian.com</center>
+<p>There is one main table and there are few sub-tables to the main table. We have the database design requirement for audit trail purpose in MySQL 57. Log audit data in business services which means collecting the required data in each business service operation and log it using some abstract Audit service to some data store. But either way works just fine. Audit trails are the manual or electronic records that chronologically catalog events or procedures to provide support documentation and history that is used to authenticate security and operational actions or mitigate challenges. Audit Log Confluence Data Center And Server 7 4 Atlassian Documentation.</p>
+<p><img loading="lazy" width="100%" src="https://creativeinspirations.github.io/img/placeholder.svg" data-src="http://www.databasedev.co.uk/image/rs.jpg" alt="Creating An Audit Trail In Microsoft Access Database Solutions For Microsoft Access Databasedev Co Uk" title="Creating An Audit Trail In Microsoft Access Database Solutions For Microsoft Access Databasedev Co Uk" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';" class="center" /></p>
+<center>Source: databasedev.co.uk</center>
+<p>For every record in the main table there will be multiple records in the sub-tables. This item is not output for privilege checking. Same as audits_1pk except used for tables which have a. Well create a small example database for a blogging application. Stores a basic set of historical changes with a record ID the blog post ID the change type NEW EDIT or DELETE and the datetime of that change. Creating An Audit Trail In Microsoft Access Database Solutions For Microsoft Access Databasedev Co Uk.</p>
+<p><img loading="lazy" width="100%" src="https://creativeinspirations.github.io/img/placeholder.svg" data-src="https://docs.microsoft.com/en-us/azure/mysql/media/howto-configure-audit-logs-portal/audit-log-enabled.png" alt="Access Audit Logs Azure Portal Azure Database For Mysql Microsoft Docs" title="Access Audit Logs Azure Portal Azure Database For Mysql Microsoft Docs" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';" class="center" /></p>
+<center>Source: docs.microsoft.com</center>
+<p>The audit table has its own primary key column named OrderAuditID. No row reconstruction from individual value changes is necessary. This approach could be considered the traditional auditing technique where an auditing table is created for each base table that needs to be audited. For every record in the main table there will be multiple records in the sub-tables. Here is a chunk of code I wrote back in 2007 for quickly adding an audit trail to a database. Access Audit Logs Azure Portal Azure Database For Mysql Microsoft Docs.</p>
+<p><img loading="lazy" width="100%" src="https://creativeinspirations.github.io/img/placeholder.svg" data-src="https://www.codeproject.com/KB/database/401249/AuditData-1-r-700.jpg" alt="Data Auditing Tool Audit Trigger Generator Codeproject" title="Data Auditing Tool Audit Trigger Generator Codeproject" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';" class="center" /></p>
+<center>Source: codeproject.com</center>
+<p>Using generic logging framework like Log4J to log the auditing information to desired format and data store. It is output in the following cases. As triggers are user-defined objects T-SQL must be written to specify what data to capture and ultimately what to do with it. This will work but often will be not-too-optimal. Then create a newmodule and. Data Auditing Tool Audit Trigger Generator Codeproject.</p>
+<p><img loading="lazy" width="100%" src="https://creativeinspirations.github.io/img/placeholder.svg" data-src="https://docs.inductiveautomation.com/download/attachments/26019732/2019-12-18_10-10-51.png?version=2&amp;amp;modificationDate=1580255142000&amp;amp;api=v2" alt="Audit Log And Profiles Ignition User Manual 8 0 Ignition Documentation" title="Audit Log And Profiles Ignition User Manual 8 0 Ignition Documentation" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';" class="center" /></p>
+<center>Source: docs.inductiveautomation.com</center>
+<p>If you ever need to use the audit table you will appreciate this. Queries like show me all the changes applied to this record over the last month are simple and efficient to both write and execute. This will work but often will be not-too-optimal. For every record in the main table there will be multiple records in the sub-tables. Before you add a new table to the JD Edwards EnterpriseOne system determine whether an existing table contains the data items required. Audit Log And Profiles Ignition User Manual 8 0 Ignition Documentation.</p>
+<p><img loading="lazy" width="100%" src="https://creativeinspirations.github.io/img/placeholder.svg" data-src="https://confluence.atlassian.com/adminjiracloud/files/818578846/976169130/1/1566539304230/Audit&#43;log.png" alt="Audit Activities In Jira Applications Atlassian Support" title="Audit Activities In Jira Applications Atlassian Support" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';" class="center" /></p>
+<center>Source: support.atlassian.com</center>
+<p>Here is a chunk of code I wrote back in 2007 for quickly adding an audit trail to a database. For every record in the main table there will be multiple records in the sub-tables. This item is not output for privilege checking. The design from the base table to the audit table are very similar but the audit table has some additional columns to support managing the historical data ie. There is one main table and there are few sub-tables to the main table. Audit Activities In Jira Applications Atlassian Support.</p>
+
+   
+
+            </article>
+            <div class="row"><div class="posts-image" style="width:50%;"><a style="margin:5px;" href="/aza-designer-clothes/">&laquo;&laquo;&nbsp;32 New Aza designer clothes with Simple Design</a></div>
+    <div class="posts-image" style="width:50%"><a style="margin:5px;" href="/autumn-t-shirt-design/">45 Popular Autumn t shirt design for Creative Ideas&nbsp;&raquo;&raquo;</a></div></div>
+            
+            <div class="mb-4">
+                <span class="taglist"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+<div class="container pt-4 pb-4">
+    
+    <h5 class="font-weight-bold spanborder"><span>Related Article</span></h5>
+    <div class="row">
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/add-space-interior-design/"><img height="80" src="/img/placeholder.svg" data-src="https://i.pinimg.com/originals/23/97/71/239771acee61ec262c2b2d39a646ef10.jpg" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/add-space-interior-design/">39 Nice Add space interior design for Creative Ideas</a>
+                        </h2>
+                        <small class="text-muted">Mar 16 . 9 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/autocad-2d-house-design/"><img height="80" src="/img/placeholder.svg" data-src="https://i.pinimg.com/originals/f2/57/f3/f257f3f59841a5f8e2dab2449c1da3f2.png" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/autocad-2d-house-design/">77 Best Autocad 2d house design for New Ideas</a>
+                        </h2>
+                        <small class="text-muted">May 30 . 9 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/anne-thull-fine-art-designs-llc/"><img height="80" src="/img/placeholder.svg" data-src="https://i.pinimg.com/originals/be/3a/2a/be3a2a1054888e8922968e36a0842365.jpg" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/anne-thull-fine-art-designs-llc/">42 Creative Anne thull fine art designs llc with Simple Design</a>
+                        </h2>
+                        <small class="text-muted">Mar 12 . 4 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/altium-designer-student-licence/"><img height="80" src="/img/placeholder.svg" data-src="https://www.altium.com/documentation/sites/default/files/resize/remote/8c70ffb7c02a2ccc83ba42170779fae9-1618x695.jpeg" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/altium-designer-student-licence/">62 Simple Altium designer student licence for Creative Ideas</a>
+                        </h2>
+                        <small class="text-muted">Sep 14 . 7 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/ant-design-affix/"><img height="80" src="/img/placeholder.svg" data-src="https://camo.githubusercontent.com/6ced26be3a0fab0627ce95826acfde8563dc07863cf70cac9e140565b7992cc6/687474703a2f2f692e696d6775722e636f6d2f783536495a49732e676966" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/ant-design-affix/">65 Nice Ant design affix for Creative Ideas</a>
+                        </h2>
+                        <small class="text-muted">Oct 09 . 7 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/all-pakistani-designers/"><img height="80" src="/img/placeholder.svg" data-src="https://i.pinimg.com/originals/ea/30/05/ea3005249cba596a958daac8a58d2d74.jpg" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/all-pakistani-designers/">77 Best All pakistani designers </a>
+                        </h2>
+                        <small class="text-muted">Sep 01 . 8 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/audits-of-financial-statements-are-designed-to-obtain-reasonable-assurance/"><img height="80" src="/img/placeholder.svg" data-src="https://i.pinimg.com/originals/f4/89/72/f48972dba280ae86fe4c017291ad6266.jpg" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/audits-of-financial-statements-are-designed-to-obtain-reasonable-assurance/">45 Nice Audits of financial statements are designed to obtain reasonable assurance with Simple Design</a>
+                        </h2>
+                        <small class="text-muted">Mar 21 . 11 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/allan-copley-designs-artesia-coffee-table/"><img height="80" src="/img/placeholder.svg" data-src="https://i.pinimg.com/originals/fe/00/a5/fe00a582c041e6184ce7811e1a5f315e.jpg" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/allan-copley-designs-artesia-coffee-table/">61 New Allan copley designs artesia coffee table for Trend 2022</a>
+                        </h2>
+                        <small class="text-muted">May 09 . 7 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/avatar-set-design/"><img height="80" src="/img/placeholder.svg" data-src="https://i.pinimg.com/originals/6d/5a/a8/6d5aa8a6b7de7ecdbce625a649aaa688.jpg" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/avatar-set-design/">75 Simple Avatar set design </a>
+                        </h2>
+                        <small class="text-muted">Apr 23 . 6 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/alias-design-2014/"><img height="80" src="/img/placeholder.svg" data-src="http://1.bp.blogspot.com/-2sfcwz552Kk/VQ5xxoBw_KI/AAAAAAAAGGs/uPZk3pqlVgM/s1600/Autodesk-Alias-Autostudio-2015-Free-Download-Offline1.jpg" onerror="this.onerror=null;this.src='https:\/\/creativeinspirations.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/alias-design-2014/">67 Popular Alias design 2014 for New Ideas</a>
+                        </h2>
+                        <small class="text-muted">Apr 18 . 7 min read</small>
+                    </div>
+                </div>
+        </div>
+</div>
+</div>
+</div>
+    </main>    <script async="async" src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script async="async" src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script async="async" src="https://creativeinspirations.github.io/assets/js/theme.js"></script>
+    <script>function init(){var imgDefer=document.getElementsByTagName('img');for (var i=0; i<imgDefer.length; i++){if(imgDefer[i].getAttribute('data-src')){imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));}}}window.onload=init;</script>
+    
+    <footer class="bg-white border-top p-3 text-muted small">
+        <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div><span style="text-transform: capitalize;"><a href="https://creativeinspirations.github.io/">Best Creative Design Ideas</a> Copyright &copy; 2021.</span></div>
+            
+        </div>
+        </div>
+    </footer>
+
+
+<script type="text/javascript">
+var sc_project=11911213; 
+var sc_invisible=1; 
+var sc_security="de02d441"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/11911213/0/de02d441/1/"
+alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+
+
+  </body>
+</html>
